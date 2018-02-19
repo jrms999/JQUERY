@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+#boxGame {
+  background: #333;
+  padding:0;
+  #boxControls {
+    h1 {
+      margin:0;
+      padding:14px;
+      color:#fff;
+      background:#232323;
+      font-size:24px;
+    }
+    position: relative;
+    padding:0;
+    height: 100%;
+    color: #fff;
+    float: left;
+    left: 0;
+    background: #333333;
+    border-right: 1px solid #232323;
+    .controls {
+      padding:14px 14px;
+      border-bottom:1px solid #222;
+      &:last-child {
+        border:none;
+       }
+    }
+    button {
+      text-transform: uppercase;
+      background: #434343;
+      border: none;
+      outline: none;
+      box-shadow: 0px 2px 0px #222;
+      padding: 7px 14px;
+      margin: 7px 3.5px;
+      font-size: 12px;
+      font-weight:bold;
+      &:hover {
+        background: #545454;
+      }
+      &:active {
+        background: #313131;
+      }
+    }
+    /*#displayControls button {
+       background: #2196F3;
+       box-shadow:0 2px 0 #fff;
+     }
+     #animateControls button {
+       background: #43A047;
+       box-shadow:0 2px 0 #fff;
+     }
+    #styleControls button {
+       background: #FF9800;
+       box-shadow:0 2px 0 #fff;
+     }
+    */
+    #reset {
+       background: #E53935;
+       box-shadow:0 2px 0 #fff;
+     }
+  }
+  #workspace {
+    height: 100%;
+    min-height: 500px;
+    background: #424242;
+    border-left: 1px solid #545454;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    #box {
+      background: #6983BE;
+      color: #fff;
+      max-width: 260px;
+      max-height: 260px;
+      position: relative;
+      top:160px;
+      left:44%;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+    .show {
+      visibility:visible;
+    }
+    .hide {
+      opacity: 0;
+    }
+    .square {
+        padding: 14px;
+        border-radius: 4px;
+        width: 160px;
+        height: 160px;
+      }
+    .circle {
+      border-radius: 100% !important;
+    }
+    .moon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 black;
+    }
+    .red {
+      background: #FF5551 !important;
+    }
+    .yellow {
+      background: #FFFF43 !important;
+    }
+    .green {
+      background: #A6F140 !important;
+    }
+  }
+}
